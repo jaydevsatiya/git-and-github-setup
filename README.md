@@ -1,28 +1,23 @@
-# git-and-github-setup For All Laptop and Desktop
-install git --> https://git-scm.com/install/windows <br>
-Add Your Config into Git <br>
-Open Git Bash Into Computer <br>
-Paste Below CMD: <br>
-git config --global --unset user.name <br>
-git config -global --unset user.email <br>
-git config --global user.name "jaydevsatiya" <br>
-git config --global user.email "jaydevsatiya39@gmail.com" <br>
-check your git config (paste below cmd into gitbash)
-git config --list
-Check your email and username in given output
-create a project folder into computer (ex. News-Website)
-join your folder with github
-go to Github Website (login first)
-Create a New Repo (check for new btn into dashboard - green color btn)
-Give a Name to Repo (ex. News-Website)
-Click botton --> create a Repo (green botton)
-find the link that start with --> git remote add origin --> Copy that whole line
-open your vs code --> open terminal (check the menu click the option terminal --> new terminal) --> first check last words (ex. /News-Website>)
-paste the copy link(repo link) --> close the terminal
-create files, edit files, delete files into your folder
-open terminal and give below cmd one by one:
-git add .
-git commit -m "give a msg"
-git push origin main (main --> branch name {check your working brach first and after tha t write the branch name})
-repeat the cycle
-edit files --> git add . --> git commit -m "give a msg" --> git push origin main --> edit files
+# Git & GitHub Setup Guide
+
+A complete, step-by-step guide to configuring Git on your machine, connecting your projects to GitHub, and managing your daily development workflow.
+
+---
+
+## 1. First-Time Git Setup
+Perform these steps **once** on any new computer to install and configure your global Git settings.
+
+### Step A: Install Git
+* Download and install Git for your operating system: [Download Git for Windows](https://git-scm.com/install/windows)
+
+### Step B: Configure Your Identity
+Open **Git Bash** (or your preferred terminal) and run the following commands to clear any old configurations and set up your active GitHub account:
+
+```bash
+# Clear existing configurations (Optional)
+git config --global --unset user.name
+git config --global --unset user.email
+
+# Set your GitHub identity
+git config --global user.name "jaydevsatiya"
+git config --global user.email "jaydevsatiya39@gmail.com"
